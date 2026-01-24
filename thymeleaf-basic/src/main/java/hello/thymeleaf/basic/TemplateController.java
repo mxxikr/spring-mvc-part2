@@ -13,4 +13,9 @@ public class TemplateController {
     public String template(Model model) {
         return "template/fragment/fragmentMain";
     }
+
+    @GetMapping("/layout")
+    public String layout() {
+        return "template/layout/layoutMain.html";
+    }
 }
