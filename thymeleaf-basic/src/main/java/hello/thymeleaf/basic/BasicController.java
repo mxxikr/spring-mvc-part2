@@ -51,17 +51,6 @@ public class BasicController {
         return  "basic/variable";
     }
 
-    @Data
-    static class User {
-        private String username;
-        private int age;
-
-        public User(String username, int age) {
-            this.username = username;
-            this.age = age;
-        }
-    }
-
     @GetMapping("/basic-objects")
     public String basicObjects(Model model, HttpServletRequest request, HttpServletResponse response, HttpSession session) {
         session.setAttribute("sessionData", "Hello Session");
@@ -141,5 +130,12 @@ public class BasicController {
     public String block(Model model) {
         addUsers(model);
         return "basic/block";
+    }
+
+    @GetMapping("/javascript")
+    public String javascript(Model model) {
+        model.addAttribute("user", new User("userA", 10));
+        addUsers(model);
+        return "basic/javascript";
     }
 }
