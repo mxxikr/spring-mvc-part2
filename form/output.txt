@@ -1,0 +1,3 @@
+The Gradle build failed because it could not find the Spring Boot plugin version 4.0.1. This likely means that version 4.0.1 of Spring Boot does not exist or is not yet released. The error message is: "Failed to create Jar file .../spring-boot-gradle-plugin-4.0.1.jar".
+
+Please let me know how you would like to proceed. I recommend changing the Spring Boot version to a known stable release, such as 3.2.2.
