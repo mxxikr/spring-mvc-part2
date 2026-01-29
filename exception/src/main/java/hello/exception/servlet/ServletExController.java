@@ -1,4 +1,4 @@
-package hello.exception;
+package hello.exception.servlet;
 
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
